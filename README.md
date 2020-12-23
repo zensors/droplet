@@ -10,13 +10,13 @@ The current version of Droplet only has specific facilities for detection-style 
 
 The Droplet specification has a few pieces that describe both the format and some features of its usage.  These are split into the following categories:
 
-- [Concepts](./concepts)
+- [Concepts](./concepts.md)
 
 - Common Types
-	- [Geometry](./common/geometry)
+	- [Geometry](./common/geometry.md)
 
 - Annotation Types
-	- [Image Annotation](./annotations/image-annotation)
+	- [Image Annotation](./annotations/image-annotation.md)
 
 ## Using Droplet
 
