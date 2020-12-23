@@ -26,4 +26,4 @@ In order to use droplet, you'll probably want to use bindings for whatever langa
 
 ## Contributing
 
-Have an idea for how to improve Droplet?
+Have an idea for how to improve Droplet?  Open an issue with your idea in the issue tracker and we'll look into adding it to the spec!
