@@ -35,16 +35,6 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 
 ## Example
 
-<style>
-.preview-table {
-  table-layout: fixed;
-}
-
-.preview-table th {
-  width: 50%;
-}
-</style>
-
 <table class="preview-table">
 <tr>
 <th>Droplet</th>
