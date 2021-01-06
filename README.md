@@ -122,6 +122,6 @@ In order to use droplet, you'll probably want to use bindings for whatever langa
 
 ## Contributing
 
-The current version of Droplet only has specific facilities for detection-style annotations on individual images, though other varieties of annotations (e.g., textual descriptions, relationships) and annotations on other subjects (e.g, video) will be added in the future. (???)
+The current version of Droplet only has specific facilities for detection-style annotations on individual images, though other varieties of annotations (e.g., textual descriptions, relationships) and annotations on other subjects (e.g, video) will be added in the future.
 
-Have an idea for how to improve Droplet?  Open an issue with your idea in the issue tracker and we'll look into adding it to the spec!
+Have an idea for how to improve Droplet?  We're looking for community contributions to help the format succeed!  Just [open an issue](https://github.com/zensors/droplet/issues) with your idea!
