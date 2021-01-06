@@ -35,10 +35,20 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 
 ## Example
 
-<table>
+<style>
+.preview-table {
+  table-layout: fixed;
+}
+
+.preview-table th {
+  width: 50%;
+}
+</style>
+
+<table class="preview-table">
 <tr>
-<th style="width: 50%">Droplet</th>
-<th style="width: 50%">Preview</th>
+<th>Droplet</th>
+<th>Preview</th>
 </tr>
 <tr>
 <td>
