@@ -18,8 +18,8 @@ A `BoundingBox` is a tight axis-aligned rectangle containing a given detection. 
 
 ```ts
 interface BoundingBox {
-	rectangle: Rectangle;
-	confidence?: number;
+  rectangle: Rectangle;
+  confidence?: number;
 }
 ```
 
@@ -29,8 +29,8 @@ A `Segmentation` is a tight mask containing a given detection.  It may also have
 
 ```ts
 interface Segmentation {
-	mask: Mask;
-	confidence?: number;
+  mask: Mask;
+  confidence?: number;
 }
 ```
 
@@ -40,9 +40,9 @@ A `Keypoint` is an appearance of a point of interest for a particular class.  Fo
 
 ```ts
 interface Keypoint {
-	point: Point;
-	occluded?: boolean;
-	confidence?: number;
+  point: Point;
+  occluded?: boolean;
+  confidence?: number;
 }
 ```
 
@@ -57,10 +57,10 @@ An `Instance` is an appearance of a single example of a particular class within 
 
 ```ts
 interface Instance {
-	boundingBox?: BoundingBox;
-	segmentation?: Segmentation;
-	keypoints?: Record<string, Keypoint | null>;
-	attributes?: Record<string, string>;
+  boundingBox?: BoundingBox;
+  segmentation?: Segmentation;
+  keypoints?: Record<string, Keypoint | null>;
+  attributes?: Record<string, string>;
 }
 ```
 
@@ -76,9 +76,9 @@ A multi-instance may have any subset of the following fields:
 
 ```ts
 interface MultiInstance {
-	boundingBox?: Rectangle;
-	segmentation?: Mask;
-	count?: number;
+  boundingBox?: Rectangle;
+  segmentation?: Mask;
+  count?: number;
 }
 ```
 
@@ -88,8 +88,8 @@ A `ClassAnnotation` is the collection of all of the instances and multi-instance
 
 ```ts
 interface ClassAnnotation {
-	instances?: Instance[];
-	multiInstances?: MultiInstance[];
+  instances?: Instance[];
+  multiInstances?: MultiInstance[];
 }
 ```
 
@@ -99,7 +99,7 @@ An `Image` is a single picture taken by a camera.  An image is defined by one or
 
 ```ts
 interface Image {
-	paths: string[];
+  paths: string[];
 }
 ```
 
@@ -109,9 +109,9 @@ An `ImageAnnotation` is a collection of annotations on a given image.
 
 ```ts
 interface ImageAnnotation {
-	kind: "ImageAnnotation";
-	image: Image;
-	classes: Record<string, ClassAnnotation>;
+  kind: "ImageAnnotation";
+  image: Image;
+  classes: Record<string, ClassAnnotation>;
 }
 ```
 
@@ -128,10 +128,10 @@ An `InstanceTemplate` describes what fields should be present for instances of a
 
 ```ts
 interface InstanceTemplate {
-	boundingBox?: boolean;
-	segmentation?: boolean;
-	keypoints?: string[];
-	attributes?: Record<string, string[]>;
+  boundingBox?: boolean;
+  segmentation?: boolean;
+  keypoints?: string[];
+  attributes?: Record<string, string[]>;
 }
 ```
 
@@ -152,9 +152,9 @@ A `MultiInstanceTemplate` describes what fields should be present for multi-inst
 
 ```ts
 interface MultiInstanceTemplate {
-	boundingBox?: boolean;
-	segmentation?: boolean;
-	count?: boolean;
+  boundingBox?: boolean;
+  segmentation?: boolean;
+  count?: boolean;
 }
 ```
 
@@ -173,8 +173,8 @@ A `ClassAnnotationTemplate` describes what fields should be present on annotatio
 
 ```ts
 interface ClassAnnotationTemplate {
-	instances?: InstanceTemplate;
-	multiInstances?: MultiInstanceTemplate;
+  instances?: InstanceTemplate;
+  multiInstances?: MultiInstanceTemplate;
 }
 ```
 
@@ -189,7 +189,7 @@ An `ImageAnnotationTemplate` describes what fields should be present in an `Imag
 
 ```ts
 interface ImageAnnotationTemplate {
-	classes: Record<string, ClassAnnotationTemplate>;
+  classes: Record<string, ClassAnnotationTemplate>;
 }
 ```
 

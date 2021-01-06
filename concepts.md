@@ -13,14 +13,14 @@ More concretely, here is a specific example of what that would look like in the 
 #### Template
 ```json
 {
-	"kind": "ImageAnnotation",
-	"classes": {
-		"person": {
-			"instances": {
-				"boundingBox": true
-			}
-		}
-	}
+  "kind": "ImageAnnotation",
+  "classes": {
+    "person": {
+      "instances": {
+        "boundingBox": true
+      }
+    }
+  }
 }
 ```
 
@@ -29,26 +29,26 @@ _This template says that we have an image annotation for which we annotate a cla
 #### Droplet
 ```json
 {
-	"kind": "ImageAnnotation",
-	"image:": {
-		"paths": ["http://example.com/path/to/image"]
-	},
-	"classes": {
-		"person": {
-			"instances": [
-				{
-					"boundingBox": {
-						"rectangle": [[0.2, 0.4], [0.3, 0.6]]
-					}
-				},
-				{
-					"boundingBox": {
-						"rectangle": [[0.6, 0.3], [0.8, 0.9]]
-					}
-				}
-			]
-		}
-	}
+  "kind": "ImageAnnotation",
+  "image:": {
+    "paths": ["http://example.com/path/to/image"]
+  },
+  "classes": {
+    "person": {
+      "instances": [
+        {
+          "boundingBox": {
+            "rectangle": [[0.2, 0.4], [0.3, 0.6]]
+          }
+        },
+        {
+          "boundingBox": {
+            "rectangle": [[0.6, 0.3], [0.8, 0.9]]
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 

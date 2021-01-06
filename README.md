@@ -47,6 +47,7 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 
 ```json
 {
+  "kind": "ImageAnnotation",
   "image": {
     "paths": [
       "http://images.cocodataset.org/train2017/000000541901.jpg",
