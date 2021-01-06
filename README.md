@@ -1,4 +1,6 @@
-![The Droplet logo.](assets/logo.png)
+<p align="center">
+    <img src="./assets/logo.png" width="400">
+</p>
 
 **Droplet** is a JSON-based format for serializing and operating on machine learning annotations.  The primary goal of the format is to provide a structured way to specify an annotation to facilitate data interoperability and code reuse.
 
