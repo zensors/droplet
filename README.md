@@ -39,7 +39,6 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 {
 	"image": {
 		"paths": [
-			"https://s3.wasabisys.com/zensors-mldl-public-datasets/coco-dataset/train2017/000000541901.jpg",
 			"http://images.cocodataset.org/train2017/000000541901.jpg",
 			"http://farm6.staticflickr.com/5310/5619616662_c1e5b34bd3_z.jpg"
 		]
@@ -87,68 +86,7 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 }
 ```
 
-<svg viewBox="0 0 1680 1001">
-	<style>
-		.bounding-box {
-			stroke-width: 2px;
-			stroke: rgba(var(--class-color), 1);
-			fill: rgba(var(--class-color), 0.3);
-		}
-	</style>
-	<image
-		xlink:href="https://s3.wasabisys.com/zensors-mldl-public-datasets/coco-dataset/train2017/000000541901.jpg"
-		x="0"
-		y="0"
-		width="732.75"
-		height="977"
-	/>
-	<g style="--class-color:253,88,56;">
-		<rect
-			class="bounding-box"
-			x="130.28295"
-			y="72.3957"
-			width="189.70897499999998"
-			height="56.079800000000006"
-		/>
-		<rect
-			class="bounding-box"
-			x="586.4931"
-			y="129.1594"
-			width="145.59742499999993"
-			height="44.6489"
-		/>
-		<rect
-			class="bounding-box"
-			x="361.83195"
-			y="87.1484"
-			width="175.640175"
-			height="63.2119"
-		/>
-		<rect
-			class="bounding-box"
-			x="0"
-			y="58.4246"
-			width="47.4822"
-			height="33.02260000000001"
-		/>
-	</g>
-	<g style="--class-color:0,120,246;">
-		<rect
-			class="bounding-box"
-			x="103.391025"
-			y="312.4446"
-			width="415.9089"
-			height="627.1363000000001"
-		/>
-		<rect
-			class="bounding-box"
-			x="327.3927"
-			y="19.4423"
-			width="18.172200000000032"
-			height="15.045799999999996"
-		/>
-	</g>
-</svg>
+![The above droplet, rendered.](./assets/example.png)
 
 ## Specification
 
