@@ -43,6 +43,8 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 <tr>
 <td>
 
+<details><summary>Show droplet</summary>
+
 ```json
 {
   "image": {
@@ -240,6 +242,8 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
   }
 }
 ```
+
+</details>
 
 </code></pre>
 </td>
