@@ -37,8 +37,8 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 
 <table class="preview-table">
 <tr>
-<th>Droplet</th>
-<th>Preview</th>
+<th style="width: 50%">Droplet</th>
+<th style="width: 50%">Preview</th>
 </tr>
 <tr>
 <td>
