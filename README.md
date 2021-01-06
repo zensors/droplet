@@ -9,7 +9,7 @@ A JSON-based format for working with machine learning data, with a focus on data
 <br />
 
 <a href="https://www.gnu.org/licenses/gpl-3.0">
-	<img src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
+  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
 </a>
 </p>
 
@@ -35,58 +35,68 @@ Though developed by [Zensors](https://zensors.com) for [dataTap](https://datatap
 
 ## Example
 
+<table>
+<tr>
+<td>
+
 ```json
 {
-	"image": {
-		"paths": [
-			"http://images.cocodataset.org/train2017/000000541901.jpg",
-			"http://farm6.staticflickr.com/5310/5619616662_c1e5b34bd3_z.jpg"
-		]
-	},
-	"classes": {
-		"car": {
-			"instances": [
-				{
-					"boundingBox": {
-						"rectangle": [[0.1778, 0.0741], [0.4367, 0.1315]]
-					}
-				},
-				{
-					"boundingBox": {
-						"rectangle": [[0.8004, 0.1322], [0.9991, 0.1779]]
-					}
-				},
-				{
-					"boundingBox": {
-						"rectangle": [[0.4938, 0.0892], [0.7335, 0.1539]]
-					}
-				},
-				{
-					"boundingBox": {
-						"rectangle": [[0.0000, 0.0598], [0.0648, 0.0936]]
-					}
-				}
-			]
-		},
-		"person": {
-			"instances": [
-				{
-					"boundingBox": {
-						"rectangle": [[0.1411, 0.3198], [0.7087, 0.9617]]
-					}
-				},
-				{
-					"boundingBox": {
-						"rectangle": [[0.4468, 0.0199], [0.4716, 0.0353]]
-					}
-				}
-			]
-		}
-	}
+  "image": {
+    "paths": [
+      "http://images.cocodataset.org/train2017/000000541901.jpg",
+      "http://farm6.staticflickr.com/5310/5619616662_c1e5b34bd3_z.jpg"
+    ]
+  },
+  "classes": {
+    "car": {
+      "instances": [
+        {
+          "boundingBox": {
+            "rectangle": [[0.1778, 0.0741], [0.4367, 0.1315]]
+          }
+        },
+        {
+          "boundingBox": {
+            "rectangle": [[0.8004, 0.1322], [0.9991, 0.1779]]
+          }
+        },
+        {
+          "boundingBox": {
+            "rectangle": [[0.4938, 0.0892], [0.7335, 0.1539]]
+          }
+        },
+        {
+          "boundingBox": {
+            "rectangle": [[0.0000, 0.0598], [0.0648, 0.0936]]
+          }
+        }
+      ]
+    },
+    "person": {
+      "instances": [
+        {
+          "boundingBox": {
+            "rectangle": [[0.1411, 0.3198], [0.7087, 0.9617]]
+          }
+        },
+        {
+          "boundingBox": {
+            "rectangle": [[0.4468, 0.0199], [0.4716, 0.0353]]
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 
-![The above droplet, rendered.](./assets/example.png)
+</code></pre>
+</td>
+<td>
+<img src="./assets/example.png" />
+</td>
+</tr>
+</table>
 
 ## Specification
 
@@ -95,10 +105,10 @@ The Droplet specification has a few pieces that describe both the format and som
 - [Concepts](./concepts.md)
 
 - Common Types
-	- [Geometry](./common/geometry.md)
+  - [Geometry](./common/geometry.md)
 
 - Annotation Types
-	- [Image Annotation](./annotations/image-annotation.md)
+  - [Image Annotation](./annotations/image-annotation.md)
 
 ## Using Droplet
 
