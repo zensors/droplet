@@ -10,7 +10,7 @@ A `FrameAnnotation` is a single frame of a video.  It is identical to an `ImageA
 
 ```ts
 interface FrameAnnotation {
-	classes?: Record<string, ClassAnnotation>;
+  classes?: Record<string, ClassAnnotation>;
 }
 ```
 
@@ -20,7 +20,7 @@ A `Video` is a reference to a video.  A frame is defined by one or more URIs (pa
 
 ```ts
 interface Video {
-	paths: string[];
+  paths: string[];
 }
 ```
 
@@ -30,9 +30,9 @@ A `VideoAnnotation` is a collection of annotations on a given video.
 
 ```ts
 interface VideoAnnotation {
-	kind: "VideoAnnotation";
-	video: Video;
-	frames: FrameAnnotation[];
+  kind: "VideoAnnotation";
+  video: Video;
+  frames: FrameAnnotation[];
 }
 ```
 
@@ -44,7 +44,7 @@ A `FrameAnnotationTemplate` describes what fields should be present in a `FrameA
 
 ```ts
 interface FrameAnnotationTemplate {
-	classes?: Record<string, ClassAnnotationTemplate>;
+  classes?: Record<string, ClassAnnotationTemplate>;
 }
 ```
 
@@ -58,6 +58,6 @@ A `VideoAnnotationTemplate` describes what fields should be present in a `VideoA
 
 ```ts
 interface VideoAnnotationTemplate {
-	frames: FrameAnnotationTemplate;
+  frames: FrameAnnotationTemplate;
 }
 ```
