@@ -1,6 +1,6 @@
 # Geometry
 
-In order to represent labels on parts of images, the Droplet format defines a number of types for representing geometry.  In droplet, the coordinate space for an image is **always** 0-to-1 on both axes.  This was chosen so that stored geometries are independent of the resolution of the image.
+In order to represent labels on parts of images, the Droplet format defines a number of types for representing geometry.  In droplet, the coordinate space for an image is **always** 0-to-1 on both axes.  This was chosen so that stored geometries are independent of the resolution of the media being annotated.
 
 Since Droplet is a JSON-based serialization format, here we provide TypeScript-style type definitions for all of the serialized types.  There are also language-specific bindings for operating on droplets; see the language-specific API documentation for more information.
 
