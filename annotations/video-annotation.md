@@ -16,11 +16,17 @@ interface FrameAnnotation {
 
 ### Video
 
-A `Video` is a reference to a video.  A frame is defined by one or more URIs (paths) at which it may be located.  When loading a video, implementers should use the first path that is able to be loaded successfully.  (Earlier paths may fail due to access controls or due to an unacceptable protocol.)
+A `Video` is a reference to a video.  A video is described by one or both of the following:
+
+- One or more URIs (paths) at which the video may be located.
+- A sequence of `Image`s that are the frames of the video, in order.
+
+If both are provided, it is assumed that the video at the provided paths is the same as the provided images, and a reader may choose to consume either one.
 
 ```ts
 interface Video {
-  paths: string[];
+  paths?: string[];
+  frames?: Image[];
 }
 ```
 
